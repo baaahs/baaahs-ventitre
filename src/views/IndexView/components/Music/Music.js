@@ -4,30 +4,18 @@ import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
+//import CardMedia from '@mui/material/CardMedia';
 import Avatar from '@mui/material/Avatar';
 import Typography from '@mui/material/Typography';
+//import { CardActionArea } from '@mui/material';
 
 const mock = [
   {
-    title: 'Themeable',
+    title: 'Kelly Naughton',
     subtitle:
-      'Customize any part of our components to match your design needs.',
+      'Burn Night On BAAAHS 20222',
     icon: (
-      <svg
-        height={24}
-        width={24}
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"
-        />
-      </svg>
+      <img src="https://i1.sndcdn.com/artworks-qMmrzwDgfmiFiRle-7yAqwQ-t500x500.jpg"></img>
     ),
   },
   {
@@ -141,7 +129,7 @@ const mock = [
   },
 ];
 
-const Benefits = () => {
+const Music = () => {
   const theme = useTheme();
   return (
     <Grid container spacing={4}>
@@ -159,8 +147,8 @@ const Benefits = () => {
             <Box display={'flex'} flexDirection={'column'}>
               <Box
                 component={Avatar}
-                width={50}
-                height={50}
+                width={200}
+                height={200}
                 marginBottom={2}
                 bgcolor={theme.palette.primary.main}
                 color={theme.palette.background.paper}
@@ -179,4 +167,4 @@ const Benefits = () => {
   );
 };
 
-export default Benefits;
+export default Music;
