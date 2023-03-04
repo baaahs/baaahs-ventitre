@@ -7,8 +7,9 @@ import {
   GetStarted,
   Features,
   QuickStart,
+  Music,
+  Events,
   Services,
-  Benefits,
   Hero,
 } from './components';
 
@@ -35,10 +36,13 @@ const IndexView = () => {
             <QuickStart />
           </Container>
           <Container>
-            <Features />
+            <Music />
           </Container>
           <Container>
-            <Benefits />
+            <Events />
+          </Container>
+          <Container>
+            <Features />
           </Container>
           <Box
             component={'svg'}

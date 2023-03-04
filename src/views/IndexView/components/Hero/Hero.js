@@ -104,22 +104,7 @@ const Hero = () => {
                 fontWeight: 700,
               }}
             >
-              Turn your ideas
-              <br />
-              into{' '}
-              <Typography
-                color={'primary'}
-                component={'span'}
-                variant={'inherit'}
-                sx={{
-                  background: `linear-gradient(180deg, transparent 82%, ${alpha(
-                    theme.palette.secondary.main,
-                    0.3,
-                  )} 0%)`,
-                }}
-              >
-                success.
-              </Typography>
+              BAAAHS
             </Typography>
             <Typography
               variant="h6"
@@ -127,8 +112,8 @@ const Hero = () => {
               color="text.secondary"
               sx={{ fontWeight: 400 }}
             >
-              theFront will make your product look modern and professional while
-              saving you precious time.
+              BAAAHS (the Big Ass Amazingly Awesome Homosexual Sheep) is a
+              mutant vehicle, a mobile disco, and a penetrable social statement.
             </Typography>
             <Box
               display="flex"
@@ -142,9 +127,9 @@ const Hero = () => {
                 color="primary"
                 size="large"
                 fullWidth={isMd ? false : true}
-                href={'/home'}
+                href={'/crew'}
               >
-                View pages
+                Join the flock
               </Button>
               <Box
                 marginTop={{ xs: 2, sm: 0 }}
@@ -153,13 +138,13 @@ const Hero = () => {
               >
                 <Button
                   component={'a'}
-                  href={'/docs/introduction'}
+                  href={'/about'}
                   variant="outlined"
                   color="primary"
                   size="large"
                   fullWidth={isMd ? false : true}
                 >
-                  Documentation
+                  Learn more
                 </Button>
               </Box>
             </Box>
