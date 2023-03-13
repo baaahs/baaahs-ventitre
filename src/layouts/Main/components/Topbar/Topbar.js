@@ -34,8 +34,8 @@ const Topbar = ({ onSidebarOpen, pages, colorInvert = false }) => {
           component={'img'}
           src={
             mode === 'light' && !colorInvert
-              ? 'https://assets.maccarianagency.com/the-front/logos/logo.svg'
-              : 'https://assets.maccarianagency.com/the-front/logos/logo-negative.svg'
+              ? '/images/baaahs-logo.svg'
+              : '/images/baaahs-logo.svg'
           }
           height={1}
           width={1}
@@ -110,7 +110,7 @@ const Topbar = ({ onSidebarOpen, pages, colorInvert = false }) => {
             color="primary"
             component="a"
             target="blank"
-            href="/crew/"
+            href="/crew"
             size="large"
           >
             Crew login
