@@ -3,7 +3,14 @@ import { alpha, useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Main from 'layouts/Main';
 import Container from 'components/Container';
-import { GetStarted, Features, Music, Events, Hero } from './components';
+import {
+  GetStarted,
+  Features,
+  QuickStart,
+  Services,
+  Benefits,
+  Hero,
+} from './components';
 
 const IndexView = () => {
   const theme = useTheme();
@@ -11,6 +18,9 @@ const IndexView = () => {
     <Box sx={{ overflowX: 'hidden' }}>
       <Main bgcolor={'background.paper'}>
         <Hero />
+        <Container>
+          <Services />
+        </Container>
         <Box
           sx={{
             backgroundImage: `linear-gradient(to bottom, ${alpha(
@@ -21,14 +31,14 @@ const IndexView = () => {
             position: 'relative',
           }}
         >
-          <Container>
-            <Music />
-          </Container>
-          <Container>
-            <Events />
+          <Container maxWidth={600}>
+            <QuickStart />
           </Container>
           <Container>
             <Features />
+          </Container>
+          <Container>
+            <Benefits />
           </Container>
           <Box
             component={'svg'}

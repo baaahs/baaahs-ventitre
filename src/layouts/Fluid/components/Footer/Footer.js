@@ -31,8 +31,8 @@ const Footer = () => {
               component={'img'}
               src={
                 mode === 'light'
-                  ? '/images/baaahs-logo.svg'
-                  : '/images/baaahs-logo.svg'
+                  ? 'https://assets.maccarianagency.com/the-front/logos/logo.svg'
+                  : 'https://assets.maccarianagency.com/the-front/logos/logo-negative.svg'
               }
               height={1}
               width={1}
@@ -43,44 +43,22 @@ const Footer = () => {
               <Link
                 underline="none"
                 component="a"
-                href="/events"
+                href="/"
                 color="text.primary"
                 variant={'subtitle2'}
               >
-                events
+                Home
               </Link>
             </Box>
             <Box marginTop={1} marginRight={2}>
               <Link
                 underline="none"
                 component="a"
-                href="/music"
+                href="/docs/introduction"
                 color="text.primary"
                 variant={'subtitle2'}
               >
-                music
-              </Link>
-            </Box>
-            <Box marginTop={1} marginRight={2}>
-              <Link
-                underline="none"
-                component="a"
-                href="/fundraising"
-                color="text.primary"
-                variant={'subtitle2'}
-              >
-                fundraising
-              </Link>
-            </Box>
-            <Box marginTop={1} marginRight={2}>
-              <Link
-                underline="none"
-                component="a"
-                href="/about"
-                color="text.primary"
-                variant={'subtitle2'}
-              >
-                about
+                Documentation
               </Link>
             </Box>
             <Box marginTop={1}>
@@ -89,10 +67,10 @@ const Footer = () => {
                 color="primary"
                 component="a"
                 target="blank"
-                href="mailto:info@baaahs.org?subject=Writing%20from%20the%20web"
+                href="https://mui.com/store/items/the-front-landing-page/"
                 size="small"
               >
-                Contact
+                Purchase now
               </Button>
             </Box>
           </Box>

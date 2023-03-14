@@ -23,15 +23,15 @@ const Topbar = ({ onSidebarOpen }) => {
         display={'flex'}
         component="a"
         href="/"
-        title="BAAAHS"
+        title="theFront"
         width={{ xs: 100, md: 120 }}
       >
         <Box
           component={'img'}
           src={
             mode === 'light'
-              ? '/images/baaahs-logo.svg'
-              : '/images/baaahs-logo.svg'
+              ? 'https://assets.maccarianagency.com/the-front/logos/logo.svg'
+              : 'https://assets.maccarianagency.com/the-front/logos/logo-negative.svg'
           }
           height={1}
           width={1}
