@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import { useTheme } from '@mui/material/styles';
-
+import Link from '@mui/material/Link';
 import NavItem from './components/NavItem';
 
 const SidebarNav = ({ pages }) => {
@@ -26,15 +26,15 @@ const SidebarNav = ({ pages }) => {
           display={'flex'}
           component="a"
           href="/"
-          title="theFront"
-          width={{ xs: 100, md: 120 }}
+          title="BAAAHS"
+          width={{ xs: 120, md: 150 }}
         >
           <Box
             component={'img'}
             src={
               mode === 'light'
-                ? 'https://assets.maccarianagency.com/the-front/logos/logo.svg'
-                : 'https://assets.maccarianagency.com/the-front/logos/logo-negative.svg'
+                ? '/images/baaahs-logo.svg'
+                : '/images/baaahs-logo.svg'
             }
             height={1}
             width={1}
@@ -42,6 +42,47 @@ const SidebarNav = ({ pages }) => {
         </Box>
       </Box>
       <Box paddingX={2} paddingY={2}>
+        <Box>
+          <Link
+            underline="none"
+            component="a"
+            href="/events"
+            sx={{ display: 'flex', alignItems: 'center', fontWeight: 'bold' }}
+          >
+            events
+          </Link>
+        </Box>
+        <Box>
+          <Link
+            underline="none"
+            component="a"
+            href="/music"
+            sx={{ display: 'flex', alignItems: 'center', fontWeight: 'bold' }}
+          >
+            music
+          </Link>
+        </Box>
+        <Box>
+          <Link
+            underline="none"
+            component="a"
+            href="/fundraising"
+            sx={{ display: 'flex', alignItems: 'center', fontWeight: 'bold' }}
+          >
+            fundraising
+          </Link>
+        </Box>
+        <Box>
+          <Link
+            underline="none"
+            component="a"
+            href="/about"
+            sx={{ display: 'flex', alignItems: 'center', fontWeight: 'bold' }}
+          >
+            about
+          </Link>
+        </Box>
+
         <Box>
           <NavItem title={'Landings'} items={landingPages} />
         </Box>
@@ -66,9 +107,9 @@ const SidebarNav = ({ pages }) => {
             variant="outlined"
             fullWidth
             component="a"
-            href="/docs/introduction"
+            href="/crew"
           >
-            Documentation
+            Join the flock
           </Button>
         </Box>
         <Box marginTop={1}>
@@ -79,9 +120,9 @@ const SidebarNav = ({ pages }) => {
             fullWidth
             component="a"
             target="blank"
-            href="https://mui.com/store/items/the-front-landing-page/"
+            href="/crew"
           >
-            Purchase now
+            Crew login
           </Button>
         </Box>
       </Box>
