@@ -25,14 +25,14 @@ const Footer = () => {
             component="a"
             href="/"
             title="theFront"
-            width={80}
+            width={100}
           >
             <Box
               component={'img'}
               src={
                 mode === 'light'
-                  ? 'https://assets.maccarianagency.com/the-front/logos/logo.svg'
-                  : 'https://assets.maccarianagency.com/the-front/logos/logo-negative.svg'
+                  ? '/images/baaahs-logo.svg'
+                  : '/images/baaahs-logo.svg'
               }
               height={1}
               width={1}
@@ -43,22 +43,44 @@ const Footer = () => {
               <Link
                 underline="none"
                 component="a"
-                href="/"
+                href="/events"
                 color="text.primary"
                 variant={'subtitle2'}
               >
-                Home
+                events
               </Link>
             </Box>
             <Box marginTop={1} marginRight={2}>
               <Link
                 underline="none"
                 component="a"
-                href="/docs/introduction"
+                href="/music"
                 color="text.primary"
                 variant={'subtitle2'}
               >
-                Documentation
+                music
+              </Link>
+            </Box>
+            <Box marginTop={1} marginRight={2}>
+              <Link
+                underline="none"
+                component="a"
+                href="/fundraising"
+                color="text.primary"
+                variant={'subtitle2'}
+              >
+                fundraising
+              </Link>
+            </Box>
+            <Box marginTop={1} marginRight={2}>
+              <Link
+                underline="none"
+                component="a"
+                href="/about"
+                color="text.primary"
+                variant={'subtitle2'}
+              >
+                about
               </Link>
             </Box>
             <Box marginTop={1}>
@@ -67,10 +89,10 @@ const Footer = () => {
                 color="primary"
                 component="a"
                 target="blank"
-                href="https://mui.com/store/items/the-front-landing-page/"
+                href="mailto:info@baaahs.org?subject=Writing%20from%20the%20web"
                 size="small"
               >
-                Purchase now
+                Contact
               </Button>
             </Box>
           </Box>
@@ -83,7 +105,7 @@ const Footer = () => {
           color="text.secondary"
           gutterBottom
         >
-          &copy; theFront. 2021, Maccarian. All rights reserved
+          Footer main
         </Typography>
         <Typography
           align={'center'}
@@ -91,10 +113,7 @@ const Footer = () => {
           color="text.secondary"
           component={'p'}
         >
-          When you visit or interact with our sites, services or tools, we or
-          our authorised service providers may use cookies for storing
-          information to help provide you with a better, faster and safer
-          experience and for marketing purposes.
+          Footer description
         </Typography>
       </Grid>
     </Grid>

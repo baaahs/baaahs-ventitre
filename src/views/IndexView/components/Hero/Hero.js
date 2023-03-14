@@ -96,39 +96,21 @@ const Hero = () => {
       <Box paddingY={{ xs: 0, sm: '4rem', md: '8rem' }}>
         <Container>
           <Box maxWidth={{ xs: 1, sm: '50%' }}>
-            <Typography
-              variant="h2"
-              color="text.primary"
-              gutterBottom
-              sx={{
-                fontWeight: 700,
-              }}
-            >
-              Turn your ideas
-              <br />
-              into{' '}
-              <Typography
-                color={'primary'}
-                component={'span'}
-                variant={'inherit'}
-                sx={{
-                  background: `linear-gradient(180deg, transparent 82%, ${alpha(
-                    theme.palette.secondary.main,
-                    0.3,
-                  )} 0%)`,
-                }}
-              >
-                success.
-              </Typography>
-            </Typography>
+            <Box
+              component={'img'}
+              src={'/images/baaahs.svg'}
+              alt="BAAAAHS"
+              width={{ xs: 300, md: 580 }}
+              marginBottom={{ xs: 1, sm: 2 }}
+            />
             <Typography
               variant="h6"
               component="p"
-              color="text.secondary"
-              sx={{ fontWeight: 400 }}
+              color="text.primary"
+              sx={{ fontWeight: 700 }}
             >
-              theFront will make your product look modern and professional while
-              saving you precious time.
+              The Big Ass Amazingly Awesome Homosexual Sheep (BAAAHS) is a
+              mutant vehicle, a mobile disco, and a penetrable social statement.
             </Typography>
             <Box
               display="flex"
@@ -142,9 +124,9 @@ const Hero = () => {
                 color="primary"
                 size="large"
                 fullWidth={isMd ? false : true}
-                href={'/home'}
+                href={'/crew'}
               >
-                View pages
+                Join the flock
               </Button>
               <Box
                 marginTop={{ xs: 2, sm: 0 }}
@@ -153,13 +135,13 @@ const Hero = () => {
               >
                 <Button
                   component={'a'}
-                  href={'/docs/introduction'}
+                  href={'/about'}
                   variant="outlined"
                   color="primary"
                   size="large"
                   fullWidth={isMd ? false : true}
                 >
-                  Documentation
+                  Learn more
                 </Button>
               </Box>
             </Box>
